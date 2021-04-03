@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect("mongodb://localhost:27017/students-api", {
+mongoose.connect("mongodb+srv://student:Amit@stu098@portfolio.octmy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useCreateIndex: true,
     useNewUrlParser : true,
     useUnifiedTopology: true,
