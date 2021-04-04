@@ -8,18 +8,6 @@ router.get("/", (req, res) => {
     res.send("Hello world from Student routes");
 });
 
-// app.post("/students", (req, res) => {
-//     const student = new Student(req.body);
-
-//     student.save().then(() => {
-//         res.status(201).send(student);
-//     }).catch((e) => {
-//         res.status(400).send(`Something Wrong ${e}`);
-//     });
-//     console.log(`STUDENT LOG : ${student}`);
-// })
-
-// Async Await
 router.post("/students", async (req, res) => {
     try{
         const student = new Student(req.body);
